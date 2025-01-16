@@ -45,7 +45,7 @@ const TodoPage = () => {
           </button>
         </div>
         <h1
-          className="text-3xl md:text-5xl lg:text-6xl font-bold mb-10 animate-bounce text-center"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 animate-bounce text-center"
           style={{
             animation: "bounce 2s infinite",
           }}
