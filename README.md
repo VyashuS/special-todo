@@ -13,4 +13,4 @@ Currently, two official plugins are available:
   npm run dev
 
 
-Project Deployed Link - https://special-todo-navy.vercel.app/todo
+Project Deployed Link - https://special-todo-navy.vercel.app/
