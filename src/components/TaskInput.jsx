@@ -58,7 +58,7 @@ const TaskInput = () => {
               onChange={(e) => setTask(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Add a new task"
-              className="flex-grow bg-transparent outline-none text-gray-800 text-xl sm:text-2xl"
+              className="flex-grow bg-transparent outline-none text-gray-800 text-lg sm:text-xl"
               required
             />
             <div className="flex items-center gap-4">
