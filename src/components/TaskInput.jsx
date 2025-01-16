@@ -39,7 +39,7 @@ const TaskInput = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto bg-gray-50 p-4">
+    <div className="w-full max-w-8xl mx-auto bg-gray-50 p-6 lg:p-8">
       <form
         className="w-full"
         onSubmit={(e) => {
@@ -47,25 +47,27 @@ const TaskInput = () => {
           handleAddTask();
         }}
       >
-        <div className="mb-4">
-          <div className="text-gray-600 mb-2 font-bold">Add A Task</div>
-          <div className="flex items-center gap-4 bg-white rounded-lg p-4 shadow-sm">
+        <div className="mb-6">
+          <div className="text-gray-600 mb-2 font-bold text-2xl">
+            Add A Task
+          </div>
+          <div className="flex flex-col lg:flex-row items-center gap-4 bg-white rounded-lg p-4 shadow-md">
             <input
               type="text"
               value={task}
               onChange={(e) => setTask(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Add a new task"
-              className="flex-grow bg-transparent outline-none text-gray-800"
+              className="flex-grow bg-transparent outline-none text-gray-800 text-xl sm:text-2xl"
               required
             />
             <div className="flex items-center gap-4">
-              <Bell className="w-5 h-5 text-gray-400 cursor-pointer hover:text-gray-600" />
-              <Repeat className="w-5 h-5 text-gray-400 cursor-pointer hover:text-gray-600" />
-              <Calendar className="w-5 h-5 text-gray-400 cursor-pointer hover:text-gray-600" />
+              <Bell className="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-600" />
+              <Repeat className="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-600" />
+              <Calendar className="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-600" />
               <button
                 type="submit"
-                className="px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition-colors"
+                className="px-5 py-2 bg-green-100 text-green-700 text-xl sm:text-2xl rounded-lg hover:bg-green-200 transition-colors"
               >
                 ADD TASK
               </button>
@@ -77,7 +79,7 @@ const TaskInput = () => {
           <select
             value={priority}
             onChange={(e) => setPriority(e.target.value)}
-            className="px-3 py-2 border rounded-lg mr-2"
+            className="px-3 py-2 border rounded-lg mr-2 text-lg"
           >
             <option value="Low">Low Priority</option>
             <option value="Medium">Medium Priority</option>
@@ -88,7 +90,7 @@ const TaskInput = () => {
             type="date"
             value={dueDate}
             onChange={(e) => setDueDate(e.target.value)}
-            className="px-3 py-2 border rounded-lg mr-2"
+            className="px-3 py-2 border rounded-lg mr-2 text-lg"
           />
         </div>
       </form>
